@@ -7,20 +7,20 @@ export default defineConfig(({ command }) => ({
   build: {
     sourcemap: true,
     chunkSizeWarningLimit: 2048,
-    rollupOptions: {
-      output: {
-        manualChunks: (fullPathFile: string) => {
-          if (
-            fullPathFile.includes("libs/i18n") ||
-            fullPathFile.includes("node_modules/i18n")
-          ) {
-            return "i18n";
-          }
+    // rollupOptions: {
+    //   output: {
+    //     manualChunks: (fullPathFile: string) => {
+    //       if (
+    //         fullPathFile.includes("libs/i18n") ||
+    //         fullPathFile.includes("node_modules/i18n")
+    //       ) {
+    //         return "i18n";
+    //       }
 
-          return undefined;
-        },
-      },
-    },
+    //       return undefined;
+    //     },
+    //   },
+    // },
   },
 
   plugins: [
