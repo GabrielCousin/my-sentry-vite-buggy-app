@@ -1,4 +1,7 @@
-import { defineConfig, splitVendorChunkPlugin } from "vite";
+import {
+  defineConfig,
+  // splitVendorChunkPlugin
+} from "vite";
 import react from "@vitejs/plugin-react";
 import { sentryVitePlugin } from "@sentry/vite-plugin";
 
@@ -26,7 +29,7 @@ export default defineConfig(({ command }) => ({
   plugins: [
     react(),
 
-    splitVendorChunkPlugin(),
+    // splitVendorChunkPlugin(),
 
     sentryVitePlugin({
       disable: command === "serve",
