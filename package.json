@@ -12,7 +12,7 @@
   "dependencies": {
     "@sentry/integrations": "^7.60.1",
     "@sentry/react": "^7.60.1",
-    "i18next": "^21.10.0",
+    "i18next": "^27.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^11.18.6"
